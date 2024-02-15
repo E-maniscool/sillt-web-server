@@ -1,157 +1,32 @@
-{
-	"metadata": {
-		"type": "App"
-	},
-	"project": {
-		"shadows": true,
-		"shadowType": 1,
-		"vr": false,
-		"toneMapping": 0,
-		"toneMappingExposure": 1
-	},
-	"camera": {
-		"metadata": {
-			"version": 4.6,
-			"type": "Object",
-			"generator": "Object3D.toJSON"
-		},
-		"object": {
-			"uuid": "dfa1f1db-4eae-4638-aa2c-989639ceb9b3",
-			"type": "PerspectiveCamera",
-			"name": "Camera",
-			"layers": 1,
-			"matrix": [0.9476507264148153,2.7755575615628914e-17,-0.3193087858570024,0,-0.1224739454039625,0.9235161312730178,-0.36348051938956155,0,0.2948868145961433,0.38355958504320836,0.8751707326566752,0,1.9333255180588615,4.112080032073228,6.133095772772424,1],
-			"up": [0,1,0],
-			"fov": 50,
-			"zoom": 1,
-			"near": 0.01,
-			"far": 1000,
-			"focus": 10,
-			"aspect": 1.7563959955506119,
-			"filmGauge": 35,
-			"filmOffset": 0
-		}
-	},
-	"scene": {
-		"metadata": {
-			"version": 4.6,
-			"type": "Object",
-			"generator": "Object3D.toJSON"
-		},
-		"geometries": [
-			{
-				"uuid": "ecb395e4-6021-48ba-a0f7-ceee2a828041",
-				"type": "PlaneGeometry",
-				"width": 1,
-				"height": 1,
-				"widthSegments": 1,
-				"heightSegments": 1
-			},
-			{
-				"uuid": "20843e85-c087-43c1-9afc-9a4937c5a113",
-				"type": "TorusKnotGeometry",
-				"radius": 1,
-				"tube": 0.4,
-				"tubularSegments": 64,
-				"radialSegments": 8,
-				"p": 2,
-				"q": 3
-			}],
-		"materials": [
-			{
-				"uuid": "10392d27-8713-47a2-9453-e42f7db58a33",
-				"type": "MeshStandardMaterial",
-				"color": 16777215,
-				"roughness": 1,
-				"metalness": 0,
-				"emissive": 0,
-				"envMapIntensity": 1,
-				"blendColor": 0
-			},
-			{
-				"uuid": "e2c6712b-82a2-4679-8877-35b65f7484ff",
-				"type": "MeshStandardMaterial",
-				"color": 65518,
-				"roughness": 1,
-				"metalness": 0,
-				"emissive": 16711680,
-				"envMapIntensity": 1,
-				"blendColor": 0
-			}],
-		"object": {
-			"uuid": "ce1bacc2-a2cd-41a0-91c7-09ebec02893d",
-			"type": "Scene",
-			"name": "Scene",
-			"layers": 1,
-			"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
-			"up": [0,1,0],
-			"children": [
-				{
-					"uuid": "e4184e49-201d-4dbe-affd-062096ab8755",
-					"type": "PerspectiveCamera",
-					"name": "PerspectiveCamera",
-					"layers": 1,
-					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,1.9794653130294126,6.017981527051062,1],
-					"up": [0,1,0],
-					"fov": 50,
-					"zoom": 1,
-					"near": 0.1,
-					"far": 2000,
-					"focus": 10,
-					"aspect": 1,
-					"filmGauge": 35,
-					"filmOffset": 0
-				},
-				{
-					"uuid": "21f2940c-b61b-40e4-a9a0-949c93ffbdb1",
-					"type": "Mesh",
-					"name": "Plane",
-					"layers": 1,
-					"matrix": [13.223849058963573,0,0,0,0,-0.003263441083320904,-16.83232946009996,0,0,0.9999999812053995,-0.00019387934567949294,0,0,0,0,1],
-					"up": [0,1,0],
-					"geometry": "ecb395e4-6021-48ba-a0f7-ceee2a828041",
-					"material": "10392d27-8713-47a2-9453-e42f7db58a33"
-				},
-				{
-					"uuid": "7b98331d-94db-41cf-80de-be921bb13ad3",
-					"type": "PointLight",
-					"name": "PointLight",
-					"layers": 1,
-					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,2.986059453798861,0,1],
-					"up": [0,1,0],
-					"color": 16777215,
-					"intensity": 7.4,
-					"distance": 0,
-					"decay": 2,
-					"shadow": {
-						"camera": {
-							"uuid": "40ed00e1-51be-471a-8db1-b15c423e9b67",
-							"type": "PerspectiveCamera",
-							"layers": 1,
-							"up": [0,1,0],
-							"fov": 90,
-							"zoom": 1,
-							"near": 0.5,
-							"far": 500,
-							"focus": 10,
-							"aspect": 1,
-							"filmGauge": 35,
-							"filmOffset": 0
-						}
-					}
-				},
-				{
-					"uuid": "77866772-71dd-4034-9e79-1989bc31b263",
-					"type": "Mesh",
-					"name": "TorusKnot",
-					"layers": 1,
-					"matrix": [0.328,0,0,0,0,0.328,0,0,0,0,0.328,0,0,1.1387852820990085,0,1],
-					"up": [0,1,0],
-					"geometry": "20843e85-c087-43c1-9afc-9a4937c5a113",
-					"material": "e2c6712b-82a2-4679-8877-35b65f7484ff"
-				}]
-		}
-	},
-	"scripts": {},
-	"environment": null
+import * as THREE from 'three';
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(
+  90,
+  window.innerWidth / window.innerHeight,
+  0.01,
+  1000
+);
+const renderer = new THREE.WebGLRenderer({
+  canvas: document.querySelector('#bg'),
+});
+
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setSize(window.innerWidth, window.innerHeight);
+camera.position.setZ(30);
+
+const geometry = new THREE.TorusGeometry(10,3,16,100);
+const material = new THREE.MeshStandardMaterial({color: 0xFF6347,wireframe:false});
+const torus = new THREE.Mesh(geometry,material);
+scene.add(torus)
+const ambientLight = new THREE.AmbientLight(0xffffff)
+ambientLight.position.set(20,20,20);
+scene.add(ambientLight)
+
+
+function animate(){
+  requestAnimationFrame(animate)
+  torus.rotation.x+=.001
+  torus.rotation.y+=.001
+  renderer.render(scene, camera);
 }
+animate();
